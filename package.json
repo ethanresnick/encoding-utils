@@ -1,6 +1,6 @@
 {
   "name": "@ethanresnick/encoding-utils",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "safe-stable-stringify": "^2.5.0",
-    "type-fest": "^4.24.1"
+    "tagged-tag": "^1.0.0",
+    "type-fest": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",

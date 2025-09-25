@@ -1,5 +1,13 @@
 import stringify from "safe-stable-stringify";
+import type tag from "tagged-tag";
 import type { GetTagMetadata, Tagged, UnwrapTagged } from "type-fest";
+
+export { type tag };
+
+export const x = 1 as Tagged<Tagged<number, "JSON">, "JSON2">;
+export function y<T extends Tagged<number, "JSON">, Y extends number>(it: T, x: Y) {
+  return it as Tagged<T, "JSON2"> & Y;
+}
 
 /**
  * This function accepts any JS string and encodes it in base64, using a UTF8
